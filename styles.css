@@ -1,0 +1,138 @@
+:root {
+    --branco_principal: hsl(0, 0%, 100%);
+    --branco_paragrafo: hsla(0, 0%, 100%, 0.75);
+    --branco_titulo: hsla(0, 0%, 100%, 0.6);
+    --violeta: hsl(277, 64%, 61%);
+    --background_principal: hsl(233, 47%, 7%);
+    --background_card: hsl(244, 38%, 16%);
+
+ }
+
+.conteudo_principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--background_principal);    
+}
+
+.conteudo_titulo {
+    font-size: 40px;
+    font-weight: 700;
+    width: 450px;
+    padding: 5rem 0 0rem 5rem;
+}
+
+.span{
+    color: var(--violeta);
+}
+
+.conteudo_textos {
+    background-color: var(--background_card);
+    height: 500px;
+    width: 600px;
+    color: var(--branco_principal);
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.conteudo_descrição {
+    padding: 2rem 0 0 5rem;
+    width: 25rem;
+    line-height: 1.5rem;
+    color: var(--branco_titulo);
+}
+
+.conteudo_informações {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 23rem;
+    font-family: 'Inter', sans-serif;   
+    padding: 5rem 0 0rem 5rem;
+}
+
+.informações_titulo {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 0 0 1rem;
+    font-family: 'Inter', sans-serif; 
+}
+
+.informações_descrição {
+    text-transform: uppercase;
+    color: var(--branco_titulo);
+    letter-spacing: 0.1rem;
+}
+
+.conteudo_imagem {
+    height: 500px;
+    width: 600px;
+    border-radius: 0 1rem 1rem 0;
+}
+
+
+ @media(max-width: 375px) {
+    .conteudo_principal {
+        display: flex;
+        flex-direction:column-reverse;
+        padding: 4rem;
+    }
+
+    .conteudo_imagem {
+        height: 270px;
+        width: 320px;
+        border-radius: 0.5rem 0.5rem 0 0;
+        padding: 0;
+    }
+
+    .conteudo_textos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 320px;
+        border-radius: 0 0 0.5rem 0.5rem;
+        padding: 1rem 0 2rem 0;
+    }
+
+    .conteudo_titulo {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 700;
+        width: 270px;
+        padding: 2rem 0 1rem 0;
+    }
+
+    .conteudo_informações {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .conteudo_descrição {
+        padding: 0;
+        text-align: center;
+        width: 280px;
+        padding: 0 0 1rem 0;
+    }
+
+    .informações {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .informações_titulo {
+        font-size: 20px;
+        padding: 0.7rem 0;
+    }
+
+    .informações_descrição {
+        font-size: 12px;
+    }
+
+
+
+
+ }
