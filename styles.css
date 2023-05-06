@@ -66,11 +66,16 @@
 }
 
 .conteudo_imagem {
+    background-image: url(./images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
     height: 500px;
     width: 600px;
     border-radius: 0 1rem 1rem 0;
+    background-blend-mode: multiply;
+    opacity: 0.8;
+    background-color: var(--violeta)
 }
-
 
  @media(max-width: 375px) {
     .conteudo_principal {
